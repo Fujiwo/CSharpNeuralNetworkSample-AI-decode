@@ -56,6 +56,8 @@ namespace NeuralNetwork.Core
 
     public static class Math
     {
+        //public static double Square(double value) => value * value;
+
         // シグモイド関数
         public static double Sigmoid(double x) => 1.0 / (1.0 + System.Math.Exp(-x));
 

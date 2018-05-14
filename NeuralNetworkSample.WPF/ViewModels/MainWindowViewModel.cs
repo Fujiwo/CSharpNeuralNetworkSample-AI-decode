@@ -18,10 +18,6 @@ namespace NeuralNetworkSample.WPF.ViewModels
 
     class MathViewModel
     {
-        public LineSeriesViewModel LinearFunctionGraph1 { get; } = new LineSeriesViewModel { Coordinates = MathModel.LinearFunction1, Title = "一次関数 (y = 2x - 1)", Color = Colors.Green, MarkerType = MarkerType.Circle };
-        public LineSeriesViewModel LinearFunctionGraph2 { get; } = new LineSeriesViewModel { Coordinates = MathModel.LinearFunction2, Title = "一次関数 (y = -3x + 10)", Color = Colors.Khaki, MarkerType = MarkerType.Circle };
-        public LineSeriesViewModel QuadraticFunctionGraph { get; } = new LineSeriesViewModel { Coordinates = MathModel.QuadraticFunction, Title = "二次関数 (y = x^2 - 10x + 10)", Color = Colors.Red, MarkerType = MarkerType.Circle };
-        public LineSeriesViewModel CubicFunctionGraph { get; } = new LineSeriesViewModel { Coordinates = MathModel.CubicFunction, Title = "三次関数 (y = x^3 - 10x^2 - 10x + 10)", Color = Colors.Blue, MarkerType = MarkerType.Circle };
         public LineSeriesViewModel SigmoidFunctionGraph { get; } = new LineSeriesViewModel { Coordinates = MathModel.SigmoidFunction, Title = "シグモイド関数 (y = 1 /  (1 + e^-x))", Color = Colors.DarkOrange, MarkerType = MarkerType.Circle };
         public LineSeriesViewModel DifferentialSigmoidFunctionGraph { get; } = new LineSeriesViewModel { Coordinates = MathModel.DifferentialSigmoidFunction, Title = "シグモイド関数の微分 (y = sigmoid(x) * (1 - sigmoid(x)))", Color = Colors.DarkGreen, MarkerType = MarkerType.Circle };
     }
@@ -35,13 +31,13 @@ namespace NeuralNetworkSample.WPF.ViewModels
     {
         NeuralNetworkModel neuralNetworkModel = new NeuralNetworkModel();
 
-        public LineSeriesViewModel Tokyo { get; private set; }
-        public LineSeriesViewModel Kanagawa { get; private set; }
+        public LineSeriesViewModel Fukui { get; private set; }
+        public LineSeriesViewModel Others { get; private set; }
 
         public NeuralNetworkViewModel()
         {
-            Tokyo = new LineSeriesViewModel { Coordinates = neuralNetworkModel.TokyoCoordinates, Title = "東京", Color = Colors.Red };
-            Kanagawa = new LineSeriesViewModel { Coordinates = neuralNetworkModel.KanagawaCoordinates, Title = "神奈川", Color = Colors.Blue };
+            Fukui = new LineSeriesViewModel { Coordinates = neuralNetworkModel.FukuiCoordinates, Title = "福井", Color = Colors.Red };
+            Others = new LineSeriesViewModel { Coordinates = neuralNetworkModel.OthersCoordinates, Title = "他都道府県", Color = Colors.Blue };
         }
     }
 
@@ -49,13 +45,13 @@ namespace NeuralNetworkSample.WPF.ViewModels
     {
         TrainingDataModel trainingDataModelModel = new TrainingDataModel();
 
-        public LineSeriesViewModel Tokyo { get; private set; }
-        public LineSeriesViewModel Kanagawa { get; private set; }
+        public LineSeriesViewModel Fukui { get; private set; }
+        public LineSeriesViewModel Others { get; private set; }
 
         public TrainingDataViewModel()
         {
-            Tokyo = new LineSeriesViewModel { Coordinates = trainingDataModelModel.LearningTokyoCoordinates, Title = "東京", Color = Colors.Red };
-            Kanagawa = new LineSeriesViewModel { Coordinates = trainingDataModelModel.LearningKanagawaCoordinates, Title = "神奈川", Color = Colors.Blue };
+            Fukui = new LineSeriesViewModel { Coordinates = trainingDataModelModel.LearningFukuiCoordinates, Title = "福井", Color = Colors.Red };
+            Others = new LineSeriesViewModel { Coordinates = trainingDataModelModel.LearningOthersCoordinates, Title = "他都道府県", Color = Colors.Blue };
         }
     }
 
@@ -63,17 +59,17 @@ namespace NeuralNetworkSample.WPF.ViewModels
     {
         MachineLearningModel machineLearningModel = new MachineLearningModel();
 
-        public LineSeriesViewModel TrainingTokyo { get; private set; }
-        public LineSeriesViewModel TrainingKanagawa { get; private set; }
-        public LineSeriesViewModel TestTokyo { get; private set; }
-        public LineSeriesViewModel TestKanagawa { get; private set; }
+        public LineSeriesViewModel TrainingFukui { get; private set; }
+        public LineSeriesViewModel TrainingOthers { get; private set; }
+        public LineSeriesViewModel TestFukui { get; private set; }
+        public LineSeriesViewModel TestOthers { get; private set; }
 
         public MachineLearningViewModel()
         {
-            TrainingTokyo = new LineSeriesViewModel { Coordinates = machineLearningModel.TrainingTokyoCoordinates, Title = "東京 教師データ", Color = Colors.Red, MarkerType = MarkerType.Plus };
-            TrainingKanagawa = new LineSeriesViewModel { Coordinates = machineLearningModel.TrainingKanagawaCoordinates, Title = "神奈川 教師データ", Color = Colors.Blue, MarkerType = MarkerType.Plus };
-            TestTokyo = new LineSeriesViewModel { Coordinates = machineLearningModel.TestTokyoCoordinates, Title = "東京 テストデータ", Color = Colors.DarkRed, MarkerType = MarkerType.Circle };
-            TestKanagawa = new LineSeriesViewModel { Coordinates = machineLearningModel.TestKanagawaCoordinates, Title = "神奈川 テストデータ", Color = Colors.DarkBlue, MarkerType = MarkerType.Circle };
+            TrainingFukui = new LineSeriesViewModel { Coordinates = machineLearningModel.TrainingFukuiCoordinates, Title = "福井 教師データ", Color = Colors.Red, MarkerType = MarkerType.Plus };
+            TrainingOthers = new LineSeriesViewModel { Coordinates = machineLearningModel.TrainingOthersCoordinates, Title = "他都道府県 教師データ", Color = Colors.Blue, MarkerType = MarkerType.Plus };
+            TestFukui = new LineSeriesViewModel { Coordinates = machineLearningModel.TestFukuiCoordinates, Title = "福井 テストデータ", Color = Colors.DarkRed, MarkerType = MarkerType.Circle };
+            TestOthers = new LineSeriesViewModel { Coordinates = machineLearningModel.TestOthersCoordinates, Title = "他都道府県 テストデータ", Color = Colors.DarkBlue, MarkerType = MarkerType.Circle };
         }
     }
 
