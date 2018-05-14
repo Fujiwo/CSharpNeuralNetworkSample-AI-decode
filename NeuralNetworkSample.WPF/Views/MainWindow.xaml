@@ -1,0 +1,89 @@
+﻿<Window x:Class="NeuralNetworkSample.WPF.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewmodels="clr-namespace:NeuralNetworkSample.WPF.ViewModels"
+        xmlns:oxyplot="http://oxyplot.org/wpf"
+        mc:Ignorable="d"
+        Title="NeuralNetworkSample" Height="640" Width="640">
+    <Window.DataContext>
+        <viewmodels:MainWindowViewModel />
+    </Window.DataContext>
+    <Grid>
+        <TabControl>
+            <TabItem Header="一次関数">
+                <oxyplot:Plot LegendBackground="#c0c0c0c0">
+                    <oxyplot:Plot.Series>
+                        <oxyplot:LineSeries DataContext="{Binding Math.LinearFunctionGraph1}" LineStyle="Solid" Color="{Binding Color}"  MarkerSize="2" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="1"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                        <oxyplot:LineSeries DataContext="{Binding Math.LinearFunctionGraph2}" LineStyle="Solid" Color="{Binding Color}"  MarkerSize="2" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="1"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                    </oxyplot:Plot.Series>
+                </oxyplot:Plot>
+            </TabItem>
+            <TabItem Header="高次関数">
+                <oxyplot:Plot LegendBackground="#c0c0c0c0">
+                    <oxyplot:Plot.Series >
+                        <oxyplot:LineSeries DataContext="{Binding Math.QuadraticFunctionGraph}" LineStyle="Solid" Color="{Binding Color}"  MarkerSize="2" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="1"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                        <oxyplot:LineSeries DataContext="{Binding Math.CubicFunctionGraph}" LineStyle="Solid" Color="{Binding Color}"  MarkerSize="2" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="1"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                    </oxyplot:Plot.Series>
+                </oxyplot:Plot>
+            </TabItem>
+            <TabItem Header="シグモイド関数">
+                <oxyplot:Plot LegendBackground="#c0c0c0c0">
+                    <oxyplot:Plot.Series >
+                        <oxyplot:LineSeries DataContext="{Binding Math.SigmoidFunctionGraph}" LineStyle="Solid" Color="{Binding Color}"  MarkerSize="2" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="1"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                        <oxyplot:LineSeries DataContext="{Binding Math.DifferentialSigmoidFunctionGraph}" LineStyle="Solid" Color="{Binding Color}"  MarkerSize="2" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="1"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                    </oxyplot:Plot.Series>
+                </oxyplot:Plot>
+            </TabItem>
+            <TabItem Header="サンプル データ">
+                <oxyplot:Plot LegendBackground="#c0c0c0c0">
+                    <oxyplot:Plot.Series >
+                        <oxyplot:LineSeries DataContext="{Binding SampleData.Data}" LineStyle="None" Color="Transparent"  MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                    </oxyplot:Plot.Series>
+                </oxyplot:Plot>
+            </TabItem>
+            <TabItem Header="ニューラルネットワーク">
+                <oxyplot:Plot LegendBackground="#c0c0c0c0">
+                    <oxyplot:Plot.Series >
+                        <oxyplot:LineSeries DataContext="{Binding NeuralNetwork.Tokyo}" LineStyle="None" Color="Transparent"  MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                        <oxyplot:LineSeries DataContext="{Binding NeuralNetwork.Kanagawa}" LineStyle="None" Color="Transparent"  MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                    </oxyplot:Plot.Series>
+                </oxyplot:Plot>
+            </TabItem>
+            <TabItem Header="教師データ">
+                <oxyplot:Plot LegendBackground="#c0c0c0c0">
+                    <oxyplot:Plot.Series >
+                        <oxyplot:LineSeries DataContext="{Binding TrainingData.Tokyo}" LineStyle="None" Color="Transparent"  MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                        <oxyplot:LineSeries DataContext="{Binding TrainingData.Kanagawa}" LineStyle="None" Color="Transparent"  MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                    </oxyplot:Plot.Series>
+                </oxyplot:Plot>
+            </TabItem>
+            <TabItem Header="機械学習">
+                <oxyplot:Plot LegendBackground="#c0c0c0c0">
+                    <oxyplot:Plot.Series>
+                        <oxyplot:LineSeries DataContext="{Binding MachineLearning.TrainingTokyo}" LineStyle="None" Color="Transparent" MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                        <oxyplot:LineSeries DataContext="{Binding MachineLearning.TrainingKanagawa}" LineStyle="None" Color="Transparent" MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                        <oxyplot:LineSeries DataContext="{Binding MachineLearning.TestTokyo}" LineStyle="None" Color="Transparent" MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                        <oxyplot:LineSeries DataContext="{Binding MachineLearning.TestKanagawa}" LineStyle="None" Color="Transparent" MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
+                                MarkerFill="{Binding Color}" Title="{Binding Title}" ItemsSource="{Binding Coordinates}" />
+                    </oxyplot:Plot.Series>
+                </oxyplot:Plot>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
