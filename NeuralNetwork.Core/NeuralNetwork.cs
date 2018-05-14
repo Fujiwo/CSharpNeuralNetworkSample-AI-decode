@@ -54,7 +54,7 @@ namespace NeuralNetwork.Core
         }
     }
 
-    public static class Math
+    public static class Math // 数学
     {
         //public static double Square(double value) => value * value;
 
