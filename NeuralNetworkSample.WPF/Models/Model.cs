@@ -206,7 +206,16 @@ namespace NeuralNetworkSample.WPF.Models
                 new Coordinate { Latitude = 35.420561, Longitude = 135.548270 },
                 new Coordinate { Latitude = 35.473941, Longitude = 135.436580 },
                 new Coordinate { Latitude = 35.532702, Longitude = 135.462497 },
-                new Coordinate { Latitude = 35.557382, Longitude = 135.465656 }
+                new Coordinate { Latitude = 35.557382, Longitude = 135.465656 },
+                new Coordinate { Latitude = 36.047508, Longitude = 136.414003 },
+                new Coordinate { Latitude = 35.437255, Longitude = 135.641224 },
+                new Coordinate { Latitude = 35.451298, Longitude = 135.805629 },
+                new Coordinate { Latitude = 35.535321, Longitude = 135.986298 },
+                new Coordinate { Latitude = 35.606896, Longitude = 136.129897 },
+                new Coordinate { Latitude = 35.798155, Longitude = 136.297373 },
+                new Coordinate { Latitude = 35.868748, Longitude = 136.665986 },
+                new Coordinate { Latitude = 36.054450, Longitude = 136.587643 },
+                new Coordinate { Latitude = 36.202522, Longitude = 136.260118 }
             };
 
             var testCoordinates = coordinates.Select(coordinate => coordinate - baseCoordinate);
