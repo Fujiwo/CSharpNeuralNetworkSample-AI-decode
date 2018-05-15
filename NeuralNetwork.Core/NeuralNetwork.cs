@@ -68,7 +68,7 @@ namespace NeuralNetwork.Core
     public class Input // 入力
     {
         public double Value { get; set; }
-        public double Weight { get; set; } // 重み
+        public double Weight { get; set; } = 0.0; // 重み
 
         // 重み付けを行った値
         public double WeightingValue => Value * Weight;
@@ -93,9 +93,11 @@ namespace NeuralNetwork.Core
     {
         // 入力の重み
         double[,] inputWeight = new double[,] {
-            { 0.496, 0.512 }, { -0.501, 0.998 }, { 0.498, -0.502 }
+            //{ 0.496, 0.512 }, { -0.501, 0.998 }, { 0.498, -0.502 }
+            { 0.0, 0.0 }, { 0.0, 0.0 }, { 0.0, 0.0 }
         };
-        double[] middleWeight = new[] { 0.121, -0.4996, 0.200 };
+        //double[] middleWeight = new[] { 0.121, -0.4996, 0.200 };
+        double[] middleWeight = new[] { 0.0, 0.0, 0.0 };
         double inputLayerBias = 1.0;
         double middleLayerBias = 1.0;
 
