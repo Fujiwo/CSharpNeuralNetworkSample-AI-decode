@@ -12,12 +12,6 @@ namespace NeuralNetworkSample.WPF.Models
         public double Longitude { get; set; }
         public double CorrectValue { get; set; }
 
-        //public bool CloseTo(Coordinate coordinate, double range)
-        //    => Distance(coordinate) <= range;
-
-        //public double Distance(Coordinate coordinate)
-        //    => System.Math.Sqrt(Math.Square(Latitude - coordinate.Latitude) + Math.Square(Longitude - coordinate.Longitude));
-
         public static Coordinate operator +(Coordinate coordinate1, Coordinate coordinate2)
             => new Coordinate { Latitude = coordinate1.Latitude + coordinate2.Latitude, Longitude = coordinate1.Longitude + coordinate2.Longitude, CorrectValue = coordinate1.CorrectValue };
 
@@ -27,22 +21,17 @@ namespace NeuralNetworkSample.WPF.Models
 
     class MathModel
     {
-        //public static List<DataPoint> LinearFunction1 => EnumerableExtension.Range(0.0, 10.0, 0.1).Select<double, DataPoint>(x => new DataPoint(x, 2.0 * x - 1.0)).ToList();
-        //public static List<DataPoint> LinearFunction2 => EnumerableExtension.Range(0.0, 10.0, 0.1).Select<double, DataPoint>(x => new DataPoint(x, -3.0 * x + 10.0)).ToList();
-        //public static List<DataPoint> QuadraticFunction => EnumerableExtension.Range(-5.0, 15.0, 0.1).Select<double, DataPoint>(x => new DataPoint(x, x * x - 10.0 * x + 10.0)).ToList();
-        //public static List<DataPoint> CubicFunction => EnumerableExtension.Range(-5.0, 15.0, 0.1).Select<double, DataPoint>(x => new DataPoint(x, x * x * x - x * x - 10.0 * x + 10.0)).ToList();
         public static List<DataPoint> SigmoidFunction => EnumerableExtension.Range(-8.0, 8.0, 0.1).Select<double, DataPoint>(x => new DataPoint(x, Math.Sigmoid(x))).ToList();
         public static List<DataPoint> DifferentialSigmoidFunction => EnumerableExtension.Range(-8.0, 8.0, 0.1).Select<double, DataPoint>(x => new DataPoint(x, Math.DifferentialSigmoid(x))).ToList();
     }
 
     abstract class DataModelBase
     {
-        const double range = 1.0;
+        //const double range = 1.0;
+        //const string saveFileName = "locations.new.csv";
+        //Coordinate centerCoordinate = new Coordinate { Latitude = 35.8, Longitude = 136.1 };
 
         const string dataFileName = "locations.csv";
-        //const string saveFileName = "locations.new.csv";
-
-        //Coordinate centerCoordinate = new Coordinate { Latitude = 35.8, Longitude = 136.1 };
         protected Coordinate baseCoordinate = new Coordinate { Latitude = 34.5, Longitude = 137.5 };
 
         protected IEnumerable<Coordinate> OriginalCoordinates { get; private set; }
@@ -76,18 +65,9 @@ namespace NeuralNetworkSample.WPF.Models
         public List<DataPoint> FukuiCoordinates { get; } = new List<DataPoint>();
         public List<DataPoint> OthersCoordinates { get; } = new List<DataPoint>();
 
-        //const string dataFileName = "locations.csv";
-        //Coordinate baseCoordinate = new Coordinate { Latitude = 34.5, Longitude = 137.5 }; // 35.8, 136.1 中心
-
         NeuralNetwork.Core.NeuralNetwork neuralNetwork = new NeuralNetwork.Core.NeuralNetwork();
 
         public NeuralNetworkModel() => Initialize(OriginalCoordinates.Select(coordinate => coordinate - baseCoordinate));
-
-        //void Load() => Initialize(OriginalCoordinates);
-        //{
-        //    var coordinates = Shos.CsvHelper.CsvSerializer.ReadCsv<Coordinate>(dataFileName).Select(coordinate => coordinate - baseCoordinate);
-        //    Initialize(coordinates);
-        //}
 
         void Initialize(IEnumerable<Coordinate> coordinates)
         {
@@ -101,8 +81,6 @@ namespace NeuralNetworkSample.WPF.Models
                     OthersCoordinates.Add(ToDataPoint(coordinate + baseCoordinate));
             }
         }
-
-        //static DataPoint ToDataPoint(Coordinate coordinate) => new DataPoint(coordinate.Longitude, coordinate.Latitude);
     }
 
     class TrainingDataModel : SampleDataModel
@@ -110,16 +88,7 @@ namespace NeuralNetworkSample.WPF.Models
         public List<DataPoint> LearningFukuiCoordinates { get; } = new List<DataPoint>();
         public List<DataPoint> LearningOthersCoordinates { get; } = new List<DataPoint>();
 
-        //const string dataFileName = "locations.csv";
-        //Coordinate baseCoordinate = new Coordinate { Latitude = 34.5, Longitude = 137.5 }; // 35.8, 136.1 中心
-
         public TrainingDataModel() => Initialize(OriginalCoordinates.Select(coordinate => coordinate - baseCoordinate));
-
-        //void Load()
-        //{
-        //    var coordinates = Shos.CsvHelper.CsvSerializer.ReadCsv<Coordinate>(dataFileName).Select(coordinate => coordinate - baseCoordinate);
-        //    Initialize(coordinates);
-        //}
 
         void Initialize(IEnumerable<Coordinate> coordinates)
         {
@@ -144,17 +113,12 @@ namespace NeuralNetworkSample.WPF.Models
         public List<DataPoint> TestFukuiCoordinates { get; } = new List<DataPoint>();
         public List<DataPoint> TestOthersCoordinates { get; } = new List<DataPoint>();
 
-        //const string dataFileName = "locations.csv";
-        //Coordinate baseCoordinate = new Coordinate { Latitude = 34.5, Longitude = 137.5 }; // 35.8, 136.1 中心
-
         NeuralNetwork.Core.NeuralNetwork neuralNetwork = new NeuralNetwork.Core.NeuralNetwork();
 
         public MachineLearningModel() => Load();
 
         void Load()
         {
-            //var coordinates = Shos.CsvHelper.CsvSerializer.ReadCsv<Coordinate>(dataFileName).Select(coordinate => coordinate - baseCoordinate);
-
             var coordinates = OriginalCoordinates.Select(coordinate => coordinate - baseCoordinate);
             InitializeTrainingData(coordinates);
             Learn(coordinates);
@@ -180,15 +144,6 @@ namespace NeuralNetworkSample.WPF.Models
         void Test()
         {
             var coordinates = new[] {
-                //new Coordinate { Latitude = 34.6, Longitude = 138.0 },
-                //new Coordinate { Latitude = 34.6,  Longitude = 138.18 },
-                //new Coordinate { Latitude = 35.4,  Longitude = 138.0 },
-                //new Coordinate { Latitude = 34.98,  Longitude = 138.1 },
-                //new Coordinate { Latitude = 35.0,  Longitude = 138.25 },
-                //new Coordinate { Latitude = 35.4,  Longitude = 137.6 },
-                //new Coordinate { Latitude = 34.98,  Longitude = 137.52 },
-                //new Coordinate { Latitude = 34.5,  Longitude = 138.5 },
-                //new Coordinate { Latitude = 35.4,  Longitude = 138.1 }
                 new Coordinate { Latitude = 36.258288, Longitude = 136.284582 },
                 new Coordinate { Latitude = 36.274912, Longitude = 136.329279 },
                 new Coordinate { Latitude = 36.115784, Longitude = 136.436160 },

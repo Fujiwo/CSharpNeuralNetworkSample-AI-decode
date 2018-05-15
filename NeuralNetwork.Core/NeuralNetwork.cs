@@ -92,25 +92,21 @@ namespace NeuralNetwork.Core
     public class NeuralNetwork // ニューラル ネットワーク
     {
         // 入力の重み
-        double[,] inputWeight = new double[,] {
-            //{ 0.496, 0.512 }, { -0.501, 0.998 }, { 0.498, -0.502 }
-            { 0.0, 0.0 }, { 0.0, 0.0 }, { 0.0, 0.0 }
-        };
-        //double[] middleWeight = new[] { 0.121, -0.4996, 0.200 };
-        double[] middleWeight = new[] { 0.0, 0.0, 0.0 };
-        double inputLayerBias = 1.0;
-        double middleLayerBias = 1.0;
+        double[,] inputWeight     = new double[,] { { 0.0, 0.0 }, { 0.0, 0.0 }, { 0.0, 0.0 } };
+        double[]  middleWeight    = new[] { 0.0, 0.0, 0.0 };
+        double    inputLayerBias  = 1.0;
+        double    middleLayerBias = 1.0;
 
         // 各層
-        double[] inputLayer;
-        Neuron[] middleLayer;
-        Neuron outputLayer;
+        double[]  inputLayer ;
+        Neuron[]  middleLayer;
+        Neuron    outputLayer;
 
         // 実行
         public double Commit((double, double) data)
         {
             // 各層
-            inputLayer = new[] { data.Item1, data.Item2, inputLayerBias };
+            inputLayer  = new[] { data.Item1, data.Item2, inputLayerBias };
             middleLayer = new[] { new Neuron(), new Neuron() };
             outputLayer = new Neuron();
 
@@ -132,9 +128,8 @@ namespace NeuralNetwork.Core
         // 学習
         void Learn((double, double, double) data)
         {
-            var outputData = Commit((data.Item1, data.Item2));
+            var outputData   = Commit((data.Item1, data.Item2));
             var correctValue = data.Item3;
-            // var error = correctValue - outputData;
 
             // 学習係数
             var learningRate = 0.3;
@@ -154,6 +149,7 @@ namespace NeuralNetwork.Core
             //    daltaMO * oldMiddleWeight[0] * middleLayer[0].Value * (1.0 - middleLayer[0].Value),
             //    daltaMO * oldMiddleWeight[1] * middleLayer[1].Value * (1.0 - middleLayer[1].Value)
             // };
+
             // 修正量 = δim × 入力層の値 × 学習係数
             inputWeight.For((row, column, _) => inputWeight[row, column] += inputLayer[row] * deltaIM[column] * learningRate);
             // inputWeight[0, 0] += inputLayer[0] * deltaIM[0] * learningRate;
@@ -166,18 +162,9 @@ namespace NeuralNetwork.Core
 
         static IEnumerable<Input> ToInputData(double[] inputLayer, double[] inputWeight)
             => inputLayer.IndexSelect(index => new Input { Value = inputLayer[index], Weight = inputWeight[index] });
-
         // {
         //    for (var index = 0; index < inputLayer.Length; index++)
         //        yield return new Input { Value = inputLayer[index], Weight = inputWeight[index] };
-        // }
-
-        // double[] InitializeLayers((double, double) data)
-        // {
-        //    foreach (var neuron in middleLayer)
-        //        neuron.Reset();
-        //    outputLayer.Reset();
-        //    return new[] { data.Item1, data.Item2, inputLayerBias };
         // }
     }
 }

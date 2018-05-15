@@ -9,6 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNetwork.Core", "Neura
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0F5EC748-587D-44D7-85FB-9559CF49E820}"
 	ProjectSection(SolutionItems) = preProject
+		images\2018-05-15 (01).png = images\2018-05-15 (01).png
+		images\2018-05-15 (02).png = images\2018-05-15 (02).png
+		images\neuron.png = images\neuron.png
 		README.md = README.md
 	EndProjectSection
 EndProject
