@@ -38,4 +38,9 @@ C# ‚¾‚¯‚Å‹@ŠBŠwK‚ÌŒ´—‚Å‚ ‚éƒjƒ…[ƒ‰ƒ‹ƒlƒbƒgƒ[ƒN‚ğƒtƒ‹ƒXƒNƒ‰ƒbƒ`‚Å‘‚¢‚Ä‚İ‚éƒ
 | NeuralNetworkSample.WPF | NeuralNetworkSample.WPF | App.xaml.cs | App | |
 | NeuralNetworkSample.WPF |  | locations.csv |  | À•Wƒf[ƒ^ ƒtƒ@ƒCƒ‹ (csv) |
 
+![ŠwKŒã‚Ì“ü—Í‘w‚Ìd‚İ](https://raw.githubusercontent.com/Fujiwo/PredictStockPrice-AI-decode/master/images/2018-05-15%20(01).png "ŠwKŒã‚Ì“ü—Í‘w‚Ìd‚İ")
+![ŠwKŒã‚Ì’†ŠÔ‘w‚Ìd‚İ](https://raw.githubusercontent.com/Fujiwo/PredictStockPrice-AI-decode/master/images/2018-05-15%20(02).png "ŠwKŒã‚Ì’†ŠÔ‘w‚Ìd‚İ")
+![_Œoƒlƒbƒgƒ[ƒN](https://raw.githubusercontent.com/Fujiwo/PredictStockPrice-AI-decode/master/images/neuron.png "_Œoƒlƒbƒgƒ[ƒN")
+
+
 =======
