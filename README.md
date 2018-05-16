@@ -89,18 +89,6 @@ C# で少数のニューロンからなる小規模なニューラル ネットワークを作成しています。
 
 | ソース コード | クラス | 説明 |
 | --- | --- | --- |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Views | MainWindow.xaml | MainWindow | メイン画面 |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Views | MainWindow.xaml.cs | MainWindow | メイン画面 |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF | App.xaml | App | アプリケーション |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF | App.xaml.cs | App | アプリケーション |
-| NeuralNetworkSample.WPF |  | locations.csv |  | 座標データ ファイル (csv) |
-
-##### 名前空間 (namespace) - NeuralNetworkSample.WPF.View
-
-ビュー
-
-| ソース コード | クラス | 説明 |
-| --- | --- | --- |
 | MainWindow.xaml | MainWindow | メイン画面 |
 | MainWindow.xaml.cs | MainWindow | メイン画面 |
 
