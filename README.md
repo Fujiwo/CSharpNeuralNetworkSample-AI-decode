@@ -4,10 +4,17 @@ neural network sample in C# for Microsoft de:code 2018 AI sessions
 C# でニューラルネットワークをフルスクラッチで書いて機械学習の原理を理解しよう
 
 ### 概要:
-C# だけで機械学習の原理であるニューラルネットワークをフルスクラッチで書いてみるサンプルコードと説明。
 
-### 狙い:
-ニューラルネットワークを実装してみることで、機械学習の基礎をきちんと理解できる。機械学習を基礎から理解することができる。
+
+Microsoft [de:code 2018](https://www.microsoft.com/ja-jp/events/decode/2018/) で提供されるサンプル コードです。
+次のセッションで説明します。
+
+* [AI61 C# でニューラルネットワークをスクラッチで書いて機械学習の原理を理解しよう](https://www.event-marketing.jp/events/decode/2018/sess/Schedule_Detail.aspx?id=AI61&url=Schedule.aspx)
+(2018/05/22 16:45 - 17:00)
+
+C# で機械学習の原理であるニューラルネットワークをフルスクラッチで書いてみるサンプル コードと説明です。
+
+ニューラルネットワークを実装してみることで、機械学習の基礎をきちんと理解できます。機械学習を基礎から理解することを目的としています。
 
 ### プロジェクト:
 
@@ -131,6 +138,11 @@ C# で少数のニューロンからなる小規模なニューラル ネットワークを作成しています。
 ![訓練前の重みの値](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(17).png "訓練前の重みの値")
 ![訓練後の重みの値](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(18).png "訓練後の重みの値")
 
+---
 
+### 関連資料:
 
-=======
+* [PredictStockPrice-AI-decode](https://github.com/Fujiwo/PredictStockPrice-AI-decode):
+neural network sample in C# for Microsoft de:code 2018 AI sessions ([Microsoft Azure Machine Learning Studio](https://studio.azureml.net) による株価予想プログラム)
+
+---
