@@ -18,29 +18,33 @@ C# ‚¾‚¯‚Å‹@ŠBŠwK‚ÌŒ´—‚Å‚ ‚éƒjƒ…[ƒ‰ƒ‹ƒlƒbƒgƒ[ƒN‚ğƒtƒ‹ƒXƒNƒ‰ƒbƒ`‚Å‘‚¢‚Ä‚İ‚éƒ
 | NeuralNetwork.Core | NeuralNetwork.Core | NeuralNetwork.cs | Input | “ü—Í |
 | NeuralNetwork.Core | NeuralNetwork.Core | NeuralNetwork.cs | Neuron | ƒjƒ…[ƒƒ“ |
 | NeuralNetwork.Core | NeuralNetwork.Core | NeuralNetwork.cs | NeuralNetwork | ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | Coordinate | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | MathModel | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | DataModelBase | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | SampleDataModel | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | NeuralNetworkModel | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | TrainingDataModel | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | MachineLearningModel | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | LineSeriesViewModel | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | MathViewModel | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | SampleDataViewModel | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | NeuralNetworkViewModel | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | TrainingDataViewModel | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | MachineLearningViewModel | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | MainWindowViewModel | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Views | MainWindow.xaml | MainWindow | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Views | MainWindow.xaml.cs | MainWindow | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF | App.xaml | App | |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF | App.xaml.cs | App | |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | Coordinate | ’n–¼AˆÜ“xAŒo“x‚ğŠÜ‚ŞÀ•W |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | MathModel | ”Šwƒ‚ƒfƒ‹ |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | DataModelBase | ƒf[ƒ^ ƒ‚ƒfƒ‹‚Ìƒx[ƒX ƒNƒ‰ƒX |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | SampleDataModel | À•Wƒf[ƒ^ ƒ‚ƒfƒ‹ |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | NeuralNetworkModel | ŒP—û‘O‚Ìƒf[ƒ^ ƒ‚ƒfƒ‹ |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | TrainingDataModel | ‹³tƒf[ƒ^ ƒ‚ƒfƒ‹ |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | MachineLearningModel | ‹³tƒf[ƒ^‚Å‹@ŠBŠwKŒã‚Ìƒ‚ƒfƒ‹ |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | LineSeriesViewModel | ƒvƒƒbƒg—p |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | MathViewModel | ƒVƒOƒ‚ƒCƒhŠÖ”•\¦—p |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | SampleDataViewModel | À•Wƒf[ƒ^•\¦—p |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | NeuralNetworkViewModel | ŒP—û‘O‚Ìƒf[ƒ^•\¦—p |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | TrainingDataViewModel | ‹³tƒf[ƒ^•\¦—p |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | MachineLearningViewModel | ‹³tƒf[ƒ^‚Å‹@ŠBŠwKŒã‚Ì•\¦—p |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | MainWindowViewModel | ƒƒCƒ“‰æ–Ê‘S‘Ì‚Ì ViewModel |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Views | MainWindow.xaml | MainWindow | ƒƒCƒ“‰æ–Ê |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Views | MainWindow.xaml.cs | MainWindow | ƒƒCƒ“‰æ–Ê |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF | App.xaml | App | ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ |
+| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF | App.xaml.cs | App | ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ |
 | NeuralNetworkSample.WPF |  | locations.csv |  | À•Wƒf[ƒ^ ƒtƒ@ƒCƒ‹ (csv) |
+
+![](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(01).png "ŠwKŒã‚Ì’†ŠÔ‘w‚Ìd‚İ")
+
 
 ![ŠwKŒã‚Ì“ü—Í‘w‚Ìd‚İ](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-15%20(01).png "ŠwKŒã‚Ì“ü—Í‘w‚Ìd‚İ")
 ![ŠwKŒã‚Ì’†ŠÔ‘w‚Ìd‚İ](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-15%20(02).png "ŠwKŒã‚Ì’†ŠÔ‘w‚Ìd‚İ")
-![_Œoƒlƒbƒgƒ[ƒN](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/neuron.png "_Œoƒlƒbƒgƒ[ƒN")
+
+
 
 
 =======

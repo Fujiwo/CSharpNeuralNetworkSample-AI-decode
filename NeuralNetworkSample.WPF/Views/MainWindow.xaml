@@ -22,7 +22,7 @@
                     </oxyplot:Plot.Series>
                 </oxyplot:Plot>
             </TabItem>
-            <TabItem Header="サンプル データ">
+            <TabItem Header="座標データ">
                 <oxyplot:Plot LegendBackground="#c0c0c0c0">
                     <oxyplot:Plot.Series >
                         <oxyplot:LineSeries DataContext="{Binding SampleData.Data}" LineStyle="None" Color="Transparent"  MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
@@ -30,7 +30,7 @@
                     </oxyplot:Plot.Series>
                 </oxyplot:Plot>
             </TabItem>
-            <TabItem Header="ニューラルネットワーク">
+            <TabItem Header="訓練前のニューラル ネットワーク">
                 <oxyplot:Plot LegendBackground="#c0c0c0c0">
                     <oxyplot:Plot.Series >
                         <oxyplot:LineSeries DataContext="{Binding NeuralNetwork.Fukui}" LineStyle="None" Color="Transparent"  MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
@@ -50,7 +50,7 @@
                     </oxyplot:Plot.Series>
                 </oxyplot:Plot>
             </TabItem>
-            <TabItem Header="機械学習">
+            <TabItem Header="教師データで機械学習後">
                 <oxyplot:Plot LegendBackground="#c0c0c0c0">
                     <oxyplot:Plot.Series>
                         <oxyplot:LineSeries DataContext="{Binding MachineLearning.TrainingFukui}" LineStyle="None" Color="Transparent" MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
