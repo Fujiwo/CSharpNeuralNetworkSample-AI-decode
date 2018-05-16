@@ -91,17 +91,21 @@ namespace NeuralNetwork.Core
 
     public class NeuralNetwork // ニューラル ネットワーク
     {
-        // 入力の重み
-        double[,] inputWeight     = new double[,] { { 0.0, 0.0 }, { 0.0, 0.0 }, { 0.0, 0.0 } };
-        double[]  middleWeight    = new[] { 0.0, 0.0, 0.0 };
-        double    inputLayerBias  = 1.0;
-        double    middleLayerBias = 1.0;
-
         // 各層
-        double[]  inputLayer ;
-        Neuron[]  middleLayer;
-        Neuron    outputLayer;
+        double[] inputLayer;
+        Neuron[] middleLayer;
+        Neuron   outputLayer;
 
+        // バイアス
+        double inputLayerBias  = 1.0;
+        double middleLayerBias = 1.0;
+
+        // 各層の重み
+        // 入力層 → 中間層の重み
+        double[,] inputWeight  = new double[,] { { 0.0, 0.0 }, { 0.0, 0.0 }, { 0.0, 0.0 } };
+        // 中間層 → 出力層の重み
+        double[]  middleWeight = new[] { 0.0, 0.0, 0.0 };
+        
         // 実行
         public double Commit((double, double) data)
         {

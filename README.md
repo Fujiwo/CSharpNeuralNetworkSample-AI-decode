@@ -11,39 +11,106 @@ C# ‚¾‚¯‚Å‹@ŠBŠwK‚ÌŒ´—‚Å‚ ‚éƒjƒ…[ƒ‰ƒ‹ƒlƒbƒgƒ[ƒN‚ğƒtƒ‹ƒXƒNƒ‰ƒbƒ`‚Å‘‚¢‚Ä‚İ‚éƒ
 
 ### ƒvƒƒWƒFƒNƒg:
 
-| ƒvƒƒWƒFƒNƒg | –¼‘O‹óŠÔ (namespace) | ƒ\[ƒX ƒR[ƒh | ƒNƒ‰ƒX | à–¾ |
-| --- | --- | --- | --- | --- |
-| NeuralNetwork.Core | NeuralNetwork.Core | NeuralNetwork.cs | EnumerableExtension | ”Ä—pŠg’£ƒƒ\ƒbƒh |
-| NeuralNetwork.Core | NeuralNetwork.Core | NeuralNetwork.cs | Math | ”Šw |
-| NeuralNetwork.Core | NeuralNetwork.Core | NeuralNetwork.cs | Input | “ü—Í |
-| NeuralNetwork.Core | NeuralNetwork.Core | NeuralNetwork.cs | Neuron | ƒjƒ…[ƒƒ“ |
-| NeuralNetwork.Core | NeuralNetwork.Core | NeuralNetwork.cs | NeuralNetwork | ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | Coordinate | ’n–¼AˆÜ“xAŒo“x‚ğŠÜ‚ŞÀ•W |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | MathModel | ”Šwƒ‚ƒfƒ‹ |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | DataModelBase | ƒf[ƒ^ ƒ‚ƒfƒ‹‚Ìƒx[ƒX ƒNƒ‰ƒX |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | SampleDataModel | À•Wƒf[ƒ^ ƒ‚ƒfƒ‹ |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | NeuralNetworkModel | ŒP—û‘O‚Ìƒf[ƒ^ ƒ‚ƒfƒ‹ |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | TrainingDataModel | ‹³tƒf[ƒ^ ƒ‚ƒfƒ‹ |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Models | Model.cs | MachineLearningModel | ‹³tƒf[ƒ^‚Å‹@ŠBŠwKŒã‚Ìƒ‚ƒfƒ‹ |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | LineSeriesViewModel | ƒvƒƒbƒg—p |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | MathViewModel | ƒVƒOƒ‚ƒCƒhŠÖ”•\¦—p |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | SampleDataViewModel | À•Wƒf[ƒ^•\¦—p |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | NeuralNetworkViewModel | ŒP—û‘O‚Ìƒf[ƒ^•\¦—p |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | TrainingDataViewModel | ‹³tƒf[ƒ^•\¦—p |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | MachineLearningViewModel | ‹³tƒf[ƒ^‚Å‹@ŠBŠwKŒã‚Ì•\¦—p |
-| NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.ViewModels | MainWindowViewModel.cs | MainWindowViewModel | ƒƒCƒ“‰æ–Ê‘S‘Ì‚Ì ViewModel |
+#### NeuralNetwork.Core
+
+ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN
+
+##### –¼‘O‹óŠÔ (namespace) - NeuralNetwork.Core
+
+| ƒ\[ƒX ƒR[ƒh | ƒNƒ‰ƒX | à–¾ |
+| --- | --- | --- |
+| NeuralNetwork.cs | EnumerableExtension | ”Ä—pŠg’£ƒƒ\ƒbƒh |
+| | Math | ”Šw |
+| | Input | “ü—Í |
+| | Neuron | ƒjƒ…[ƒƒ“ |
+| | NeuralNetwork | ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN |
+
+#### NeuralNetworkSample.WPF
+
+ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚ğg—p‚µ‚½ƒTƒ“ƒvƒ‹
+
+##### –¼‘O‹óŠÔ (namespace) - NeuralNetworkSample.WPF.Models
+
+ƒ‚ƒfƒ‹
+
+| ƒ\[ƒX ƒR[ƒh | ƒNƒ‰ƒX | à–¾ |
+| --- | --- | --- |
+| Model.cs | Coordinate | ’n–¼AˆÜ“xAŒo“x‚ğŠÜ‚ŞÀ•W |
+| | MathModel | ”Šwƒ‚ƒfƒ‹ |
+| | DataModelBase | ƒf[ƒ^ ƒ‚ƒfƒ‹‚Ìƒx[ƒX ƒNƒ‰ƒX |
+| | SampleDataModel | À•Wƒf[ƒ^ ƒ‚ƒfƒ‹ |
+| | NeuralNetworkModel | ŒP—û‘O‚Ìƒf[ƒ^ ƒ‚ƒfƒ‹ |
+| | TrainingDataModel | ‹³tƒf[ƒ^ ƒ‚ƒfƒ‹ |
+| | MachineLearningModel | ‹³tƒf[ƒ^‚Å‹@ŠBŠwKŒã‚Ìƒ‚ƒfƒ‹ |
+
+##### –¼‘O‹óŠÔ (namespace) - NeuralNetworkSample.WPF.ViewModels
+
+ƒrƒ…[ƒ‚ƒfƒ‹
+
+| ƒ\[ƒX ƒR[ƒh | ƒNƒ‰ƒX | à–¾ |
+| --- | --- | --- |
+| MainWindowViewModel.cs | LineSeriesViewModel | ƒvƒƒbƒg—p |
+| | MathViewModel | ƒVƒOƒ‚ƒCƒhŠÖ”•\¦—p |
+| | SampleDataViewModel | À•Wƒf[ƒ^•\¦—p |
+| | NeuralNetworkViewModel | ŒP—û‘O‚Ìƒf[ƒ^•\¦—p |
+| | TrainingDataViewModel | ‹³tƒf[ƒ^•\¦—p |
+| | MachineLearningViewModel | ‹³tƒf[ƒ^‚Å‹@ŠBŠwKŒã‚Ì•\¦—p |
+| | MainWindowViewModel | ƒƒCƒ“‰æ–Ê‘S‘Ì‚Ì ViewModel |
+
+##### –¼‘O‹óŠÔ (namespace) - NeuralNetworkSample.WPF.View
+
+ƒrƒ…[
+
+| ƒ\[ƒX ƒR[ƒh | ƒNƒ‰ƒX | à–¾ |
+| --- | --- | --- |
 | NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Views | MainWindow.xaml | MainWindow | ƒƒCƒ“‰æ–Ê |
 | NeuralNetworkSample.WPF | NeuralNetworkSample.WPF.Views | MainWindow.xaml.cs | MainWindow | ƒƒCƒ“‰æ–Ê |
 | NeuralNetworkSample.WPF | NeuralNetworkSample.WPF | App.xaml | App | ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ |
 | NeuralNetworkSample.WPF | NeuralNetworkSample.WPF | App.xaml.cs | App | ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ |
 | NeuralNetworkSample.WPF |  | locations.csv |  | À•Wƒf[ƒ^ ƒtƒ@ƒCƒ‹ (csv) |
 
-![](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(01).png "ŠwKŒã‚Ì’†ŠÔ‘w‚Ìd‚İ")
+##### –¼‘O‹óŠÔ (namespace) - NeuralNetworkSample.WPF.View
 
+ƒrƒ…[
 
-![ŠwKŒã‚Ì“ü—Í‘w‚Ìd‚İ](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-15%20(01).png "ŠwKŒã‚Ì“ü—Í‘w‚Ìd‚İ")
-![ŠwKŒã‚Ì’†ŠÔ‘w‚Ìd‚İ](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-15%20(02).png "ŠwKŒã‚Ì’†ŠÔ‘w‚Ìd‚İ")
+| ƒ\[ƒX ƒR[ƒh | ƒNƒ‰ƒX | à–¾ |
+| --- | --- | --- |
+| MainWindow.xaml | MainWindow | ƒƒCƒ“‰æ–Ê |
+| MainWindow.xaml.cs | MainWindow | ƒƒCƒ“‰æ–Ê |
 
+##### –¼‘O‹óŠÔ (namespace) - NeuralNetworkSample.WPF
+
+| ƒ\[ƒX ƒR[ƒh | ƒNƒ‰ƒX | à–¾ |
+| --- | --- | --- |
+| App.xaml | App | ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ |
+| App.xaml.cs | App | ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ |
+
+##### ƒf[ƒ^ ƒtƒ@ƒCƒ‹
+
+| ƒtƒ@ƒCƒ‹–¼ | à–¾ |
+| --- | --- |
+| locations.csv | À•Wƒf[ƒ^ ƒtƒ@ƒCƒ‹ (csv) |
+
+### à–¾:
+
+![C# ‚Åƒjƒ…[ƒ‰ƒ‹ƒlƒbƒgƒ[ƒN‚ğƒXƒNƒ‰ƒbƒ`‚Å‘‚¢‚Ä‹@ŠBŠwK‚ÌŒ´—‚ğ—‰ğ‚µ‚æ‚¤](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(01).png "C# ‚Åƒjƒ…[ƒ‰ƒ‹ƒlƒbƒgƒ[ƒN‚ğƒXƒNƒ‰ƒbƒ`‚Å‘‚¢‚Ä‹@ŠBŠwK‚ÌŒ´—‚ğ—‰ğ‚µ‚æ‚¤")
+![‹@ŠBŠwK (Machine Learning) ‚Æ‚Í](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(02).png "‹@ŠBŠwK (Machine Learning) ‚Æ‚Í")
+![‚Ü‚¸ lH’m”\ (Artificial Intelligence) ‚Æ‚Í](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(03).png "‚Ü‚¸ lH’m”\ (Artificial Intelligence) ‚Æ‚Í")
+![‹@ŠBŠwK‚Æ‚Í](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(04).png "‹@ŠBŠwK‚Æ‚Í")
+![‹@ŠBŠwK‚Ìí—Ş](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(05).png "‹@ŠBŠwK‚Ìí—Ş")
+![ƒfƒB[ƒvƒ‰[ƒjƒ“ƒO ([‘wŠwK: Deep Learning)](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(06).png "ƒfƒB[ƒvƒ‰[ƒjƒ“ƒO ([‘wŠwK: Deep Learning)")
+![ƒfƒB[ƒv ƒ‰[ƒjƒ“ƒO](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(07).png "ƒfƒB[ƒv ƒ‰[ƒjƒ“ƒO")
+![lH’m”\‚Æ‹@ŠBŠwK](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(08).png "lH’m”\‚Æ‹@ŠBŠwK")
+![ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚Æ‚Í](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(09).png "ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚Æ‚Í")
+![_Œo×–E‚Ìƒlƒbƒgƒ[ƒN](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(10).png "_Œo×–E‚Ìƒlƒbƒgƒ[ƒN")
+![ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(11).png "ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN")
+![ŒÂX‚Ìƒjƒ…[ƒƒ“](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(12).png "ŒÂX‚Ìƒjƒ…[ƒƒ“")
+![ƒVƒOƒ‚ƒCƒhŠÖ”](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(13).png "ƒVƒOƒ‚ƒCƒhŠÖ”")
+![ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚É‚æ‚é•ª—Ş](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(14).png "ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚É‚æ‚é•ª—Ş")
+![¡‰ñì¬‚·‚éƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(15).png "¡‰ñì¬‚·‚éƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN")
+![¡‰ñ‚Ìƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚ÌŒP—û](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(16).png "¡‰ñ‚Ìƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚ÌŒP—û")
+![ŒP—û‘O‚Ìd‚İ‚Ì’l](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(17).png "ŒP—û‘O‚Ìd‚İ‚Ì’l")
+![ŒP—ûŒã‚Ìd‚İ‚Ì’l](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(18).png "ŒP—ûŒã‚Ìd‚İ‚Ì’l")
 
 
 
