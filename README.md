@@ -13,7 +13,10 @@ C# ‚¾‚¯‚Å‹@ŠBŠwK‚ÌŒ´—‚Å‚ ‚éƒjƒ…[ƒ‰ƒ‹ƒlƒbƒgƒ[ƒN‚ğƒtƒ‹ƒXƒNƒ‰ƒbƒ`‚Å‘‚¢‚Ä‚İ‚éƒ
 
 #### NeuralNetwork.Core
 
-ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN
+‹@ŠBŠwK (Machine Learning) ‚ÌƒRƒA‚Æ‚È‚é•”•ª‚Å‚·B
+
+C# ‚Å­”‚Ìƒjƒ…[ƒƒ“‚©‚ç‚È‚é¬‹K–Í‚Èƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚ğì¬‚µ‚Ä‚¢‚Ü‚·B
+ƒjƒ…[ƒƒ“‚©‚ç‚Ìo—Í‚É‚ÍAƒVƒOƒ‚ƒCƒhŠÖ”‚ğg‚¢‚Ü‚·B
 
 ##### –¼‘O‹óŠÔ (namespace) - NeuralNetwork.Core
 
@@ -27,7 +30,23 @@ C# ‚¾‚¯‚Å‹@ŠBŠwK‚ÌŒ´—‚Å‚ ‚éƒjƒ…[ƒ‰ƒ‹ƒlƒbƒgƒ[ƒN‚ğƒtƒ‹ƒXƒNƒ‰ƒbƒ`‚Å‘‚¢‚Ä‚İ‚éƒ
 
 #### NeuralNetworkSample.WPF
 
-ƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚ğg—p‚µ‚½ƒTƒ“ƒvƒ‹
+ã‹Lƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚ğg—p‚µ‚½ƒTƒ“ƒvƒ‹‚Å‚·B
+
+•ŸˆäŒ§‚Æ‚»‚Ìü•Ó‚ÌÀÛ‚ÌÀ•W‚ğ—p‚¢‚Äã‹Lƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚ğŒP—û‚µ‚Ü‚·B
+
+‹³tƒf[ƒ^‚ÍA"locations.csv" ‚ÅA’n–¼AˆÜ“xAŒo“xA•ŸˆäŒ§“à‚©‚Ç‚¤‚©A‚©‚ç‚È‚é 1,088“_‚ÌÀ•Wƒf[ƒ^‚Å‚·B
+
+ŒP—ûŒã‚Ìƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚ÉAƒeƒXƒg—p‚ÌÀ•Wƒf[ƒ^‚ğ“ü—Í‚µA•ŸˆäŒ§‚Ì’†‚ÌÀ•W‚©‚Ç‚¤‚©‚ğ”»’è‚³‚¹‚Ä‚¢‚Ü‚·B
+
+•\¦‚·‚é‚à‚Ì‚ÍˆÈ‰º‚Ì‚à‚Ì‚Å‚·B
+
+* ƒVƒOƒ‚ƒCƒhŠÖ”‚ÌƒOƒ‰ƒt
+* ‘SÀ•Wƒf[ƒ^‚Ìƒvƒƒbƒg
+* ŒP—û‘O‚Ìƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚É‚æ‚é”»’èŒ‹‰Ê
+* ‹³tƒf[ƒ^
+* ‹³tƒf[ƒ^‚ÅŒP—ûŒã‚Ìƒjƒ…[ƒ‰ƒ‹ ƒlƒbƒgƒ[ƒN‚É‚æ‚é”»’èŒ‹‰Ê
+
+‚±‚ÌƒvƒƒOƒ‰ƒ€‚Í WPF ‚Åì‚ç‚ê‚Ä‚¨‚èAMVVM (Model-View-ViewModel) ƒpƒ^[ƒ“‚Å\¬‚³‚ê‚Ä‚¢‚Ü‚·B
 
 ##### –¼‘O‹óŠÔ (namespace) - NeuralNetworkSample.WPF.Models
 
@@ -91,7 +110,7 @@ C# ‚¾‚¯‚Å‹@ŠBŠwK‚ÌŒ´—‚Å‚ ‚éƒjƒ…[ƒ‰ƒ‹ƒlƒbƒgƒ[ƒN‚ğƒtƒ‹ƒXƒNƒ‰ƒbƒ`‚Å‘‚¢‚Ä‚İ‚éƒ
 | --- | --- |
 | locations.csv | À•Wƒf[ƒ^ ƒtƒ@ƒCƒ‹ (csv) |
 
-### à–¾:
+### à–¾‘—¿:
 
 ![C# ‚Åƒjƒ…[ƒ‰ƒ‹ƒlƒbƒgƒ[ƒN‚ğƒXƒNƒ‰ƒbƒ`‚Å‘‚¢‚Ä‹@ŠBŠwK‚ÌŒ´—‚ğ—‰ğ‚µ‚æ‚¤](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(01).png "C# ‚Åƒjƒ…[ƒ‰ƒ‹ƒlƒbƒgƒ[ƒN‚ğƒXƒNƒ‰ƒbƒ`‚Å‘‚¢‚Ä‹@ŠBŠwK‚ÌŒ´—‚ğ—‰ğ‚µ‚æ‚¤")
 ![‹@ŠBŠwK (Machine Learning) ‚Æ‚Í](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(02).png "‹@ŠBŠwK (Machine Learning) ‚Æ‚Í")

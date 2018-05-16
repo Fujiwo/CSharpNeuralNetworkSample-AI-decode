@@ -50,7 +50,7 @@
                     </oxyplot:Plot.Series>
                 </oxyplot:Plot>
             </TabItem>
-            <TabItem Header="教師データで機械学習後">
+            <TabItem Header="教師データで訓練後">
                 <oxyplot:Plot LegendBackground="#c0c0c0c0">
                     <oxyplot:Plot.Series>
                         <oxyplot:LineSeries DataContext="{Binding MachineLearning.TrainingFukui}" LineStyle="None" Color="Transparent" MarkerSize="3" MarkerType="{Binding MarkerType}" MarkerStroke="{Binding Color}" MarkerStrokeThickness="2"
