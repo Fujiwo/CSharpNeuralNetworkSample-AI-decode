@@ -132,7 +132,6 @@ C# で少数のニューロンからなる小規模なニューラル ネットワークを作成しています。
 ![実行結果 (シグモイド関数)](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(26).png "実行結果 (シグモイド関数)")
 ![実行結果 (座標データと訓練前)](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(27).png "実行結果 (座標データと訓練前)")
 ![実行結果 (教師データと訓練後)](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(28).png "実行結果 (教師データと訓練後)")
-![](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(28).png "")
 ![訓練前の重みの値](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(17).png "訓練前の重みの値")
 ![訓練後の重みの値](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-16%20(18).png "訓練後の重みの値")
 
