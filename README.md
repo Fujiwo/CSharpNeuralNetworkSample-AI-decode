@@ -105,6 +105,7 @@ C# で少数のニューロンからなる小規模なニューラル ネット�
 | --- | --- |
 | locations.csv | 座標データ ファイル (csv) |
 | ClassDiagram.asta | クラス図 ([Astah](http://astah.change-vision.com) ファイル) |
+| AI61.pdf | 説明資料 |
 
 ##### クラス図
 
