@@ -99,11 +99,16 @@ C# で少数のニューロンからなる小規模なニューラル ネット�
 | App.xaml | App | アプリケーション |
 | App.xaml.cs | App | アプリケーション |
 
-##### データ ファイル
+##### データ ファイルその他
 
 | ファイル名 | 説明 |
 | --- | --- |
 | locations.csv | 座標データ ファイル (csv) |
+| ClassDiagram.asta | クラス図 ([Astah](http://astah.change-vision.com) ファイル) |
+
+##### クラス図
+
+![クラス図](https://raw.githubusercontent.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode/master/images/2018-05-20%20(01).png "クラス図")
 
 ### 説明資料:
 
