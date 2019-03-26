@@ -94,23 +94,27 @@ namespace NeuralNetwork.Core
         // 各層
         double[] inputLayer;
         Neuron[] middleLayer;
-        Neuron   outputLayer;
+        Neuron outputLayer;
 
         // バイアス
-        double inputLayerBias  = 1.0;
-        double middleLayerBias = 1.0;
+        const double inputLayerBias = 1.0;
+        const double middleLayerBias = 1.0;
 
         // 各層の重み
         // 入力層 → 中間層の重み
-        double[,] inputWeight  = new double[,] { { 0.0, 0.0 }, { 0.0, 0.0 }, { 0.0, 0.0 } };
+        double[,] inputWeight = new double[,] { { RandomWeight, RandomWeight }, { RandomWeight, RandomWeight }, { RandomWeight, RandomWeight } };
         // 中間層 → 出力層の重み
-        double[]  middleWeight = new[] { 0.0, 0.0, 0.0 };
-        
+        double[] middleWeight = new[] { RandomWeight, RandomWeight, RandomWeight };
+
+        readonly static Random random = new Random();
+        const double weightRange = 10.0;
+        static double RandomWeight => (random.NextDouble() - 0.5) * weightRange;
+
         // 実行
         public double Commit((double, double) data)
         {
             // 各層
-            inputLayer  = new[] { data.Item1, data.Item2, inputLayerBias };
+            inputLayer = new[] { data.Item1, data.Item2, inputLayerBias };
             middleLayer = new[] { new Neuron(), new Neuron() };
             outputLayer = new Neuron();
 
@@ -132,7 +136,7 @@ namespace NeuralNetwork.Core
         // 学習
         void Learn((double, double, double) data)
         {
-            var outputData   = Commit((data.Item1, data.Item2));
+            var outputData = Commit((data.Item1, data.Item2));
             var correctValue = data.Item3;
 
             // 学習係数
